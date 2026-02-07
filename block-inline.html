@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements - Music Theme</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Block elements - visible borders as required */
+        div {
+            border: 3px solid #9b59b6;
+            /* Purple for music vibe */
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f4ecf7;
+        }
+
+        section {
+            border: 3px solid #e67e22;
+            /* Orange for contrast */
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #fdf2e9;
+        }
+
+        /* Inline element styling */
+        .highlight-span {
+            background-color: #f1c40f;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .explanation {
+            background-color: #d5f5e3;
+            border-left: 4px solid #27ae60;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="block-inline.html">Block vs Inline</a>
+        <a href="media.html">Media</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="iframe.html">iFrame</a>
+    </nav>
+
+    <h1>Block vs Inline Elements</h1>
+    <h2>Music Theme</h2>
+
+    <!-- 
+        =====================================================
+        BLOCK VS INLINE ELEMENTS EXPLANATION
+        =====================================================
+        
+        BLOCK ELEMENTS:
+        - Take up the full width available (stretch to fill parent container)
+        - Always start on a new line
+        - Can contain other block and inline elements
+        - Examples: <div>, <section>, <p>, <h1>-<h6>, <header>, <footer>
+        - You can set width, height, margin, and padding on all sides
+        
+        INLINE ELEMENTS:
+        - Only take up as much width as necessary (content width)
+        - Do NOT start on a new line (flow alongside other inline elements)
+        - Can only contain other inline elements or text
+        - Examples: <span>, <strong>, <em>, <a>, <img>
+        - Vertical margin and padding may not work as expected
+        
+        =====================================================
+    -->
+
+    <!-- Paragraph containing inline elements: <strong> and <span> with background color -->
+    <p>
+        <!-- 
+            The <strong> tag is an INLINE element. It does not break the flow of text.
+            It only takes up as much space as its content needs.
+        -->
+        In the world of <strong>music composition</strong>, understanding rhythm and harmony is
+
+        <!-- 
+            The <span> tag is also an INLINE element. Notice how it flows within the 
+            paragraph without breaking to a new line. The background color helps 
+            visualize that it only covers the text content, not the full width.
+        -->
+        <span class="highlight-span">absolutely essential</span> for any aspiring musician.
+        These elements form the foundation of every melody you hear.
+    </p>
+
+    <!-- 
+        BLOCK ELEMENT: <div>
+        The <div> element is a generic block-level container.
+        Notice how it:
+        1. Starts on a new line
+        2. Takes up the full available width
+        3. Has visible borders that span the entire width
+        4. Pushes the next element to a new line
+    -->
+    <div>
+        <h3>The Symphony Orchestra (Block Element: Div)</h3>
+        <p>
+            This <strong>orchestra section</strong> demonstrates block-level behavior.
+            The purple border shows that it <span class="highlight-span">spans the full width</span>
+            of the stage (parent container). Like a full orchestra setup, divs take up all available space
+            to organize instruments (content) effectively.
+        </p>
+    </div>
+
+    <!-- 
+        BLOCK ELEMENT: <section>
+        The <section> element is a semantic block-level container.
+        It behaves similarly to <div> but has semantic meaning - 
+        it represents a standalone section of content.
+        Notice the orange border spans the full available width.
+    -->
+    <section>
+        <h3>Music Genres (Block Element: Section)</h3>
+        <p>
+            This <strong>genre section</strong> also demonstrates block-level behavior.
+            The orange border illustrates that sections, like divs, are
+            <span class="highlight-span">full-width block elements</span>.
+            Examples of genres include Jazz, Classical, Rock, and Hip-Hop, each
+            deserving its own dedicated section in a music library.
+        </p>
+    </section>
+
+    <div class="explanation">
+        <strong>Key Difference Summary:</strong><br>
+        <!-- Inline elements <strong> and <span> flow together without breaking lines -->
+        <strong>Block elements</strong> (div, section) = Full width, new line before and after<br>
+        <strong>Inline elements</strong> (strong, span) = Content width only, flows with text
+    </div>
+
+    <!-- 
+        Additional demonstration: Notice how these two inline elements 
+        stay on the same line because they don't force line breaks
+    -->
+    <p>
+        Here are two inline elements side by side:
+        <strong>Sheet Music</strong> and <span class="highlight-span">Metronome</span> -
+        they flow together on the musician's desk without breaking to new lines!
+    </p>
+
+</body>
+
+</html>

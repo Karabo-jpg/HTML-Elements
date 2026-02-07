@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Elements - Music Theme</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #9b59b6;
+            padding-bottom: 10px;
+        }
+
+        .media-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        audio {
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        video {
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .caption-info {
+            background-color: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="block-inline.html">Block vs Inline</a>
+        <a href="media.html">Media</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="iframe.html">iFrame</a>
+    </nav>
+
+    <h1>HTML Media Elements</h1>
+    <h2 style="text-align: center; border: none;">Music Theme</h2>
+
+    <!-- Audio Section -->
+    <div class="media-container">
+        <h2>🎵 Audio Player</h2>
+        <p>
+            Listen to this <strong>Elevation Worship So Be IT</strong>. Notice how the HTML5 audio player
+            lets you control playback without needing external plugins.
+        </p>
+
+        <!-- 
+            The <audio> element with controls attribute displays a built-in audio player.
+            The controls attribute adds play/pause, volume, and progress bar.
+            Multiple <source> elements provide fallback formats for browser compatibility.
+        -->
+        <audio controls>
+            <!-- Primary audio source - MP3 format (widely supported) -->
+            <source src="audio/elevation-worship.mp3" type="audio/mpeg">
+
+
+
+            <!-- Fallback message for browsers that don't support audio element -->
+            Your browser does not support the audio element. Please upgrade to a modern browser.
+        </audio>
+
+        <div class="note">
+            <strong>Note:</strong> This audio player demonstrates the HTML5 <code>&lt;audio&gt;</code>
+            element with the <code>controls</code> attribute. The controls allow users to
+            play/pause, adjust volume, and seek through the song.
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="media-container">
+        <h2>🎬 Music Video Player</h2>
+        <p>
+            Watch this animated short featuring a <strong>musical storytelling</strong> experience.
+            The track element provides lyrics/captions for the video.
+        </p>
+
+        <!-- 
+            The <video> element with controls and width attributes.
+            - controls: Displays play/pause, volume, fullscreen, and progress controls
+            - width="320": Sets the video width to 320 pixels as required
+            - The <track> element provides captions for accessibility
+        -->
+        <video controls width="320">
+            <!-- Primary video source - MP4 format (widely supported) -->
+            <!-- Using Big Buck Bunny as it's a reliable standard test video, framed as a music video for the assignment -->
+            <!-- Primary video source - Forest Bunny (Big Buck Bunny) -->
+            <source src="video/forest-bunny.mp4" type="video/mp4">
+
+
+
+            <!-- 
+                TRACK ELEMENT FOR CAPTIONS
+                The <track> element provides text tracks for the video:
+                - kind="captions": Indicates these are captions (for deaf/hard of hearing)
+                - srclang="en": Specifies English language
+                - label="English": Display name in the caption menu
+                - default: Makes this the default track
+                
+                Note: The captions file should be in WebVTT format (.vtt)
+            -->
+            <track kind="captions" src="captions/music-captions.vtt?v=2" srclang="en" label="English" default>
+
+            <!-- Fallback message for browsers that don't support video element -->
+            Your browser does not support the video element. Please upgrade to a modern browser.
+        </video>
+
+        <div class="caption-info">
+            <strong>Accessibility Feature:</strong> This video includes a <code>&lt;track&gt;</code>
+            element for captions. Captions make music videos accessible to users who are deaf
+            or hard of hearing, and are also helpful for following lyrics.
+        </div>
+
+        <div class="note">
+            <strong>Video Controls Include:</strong>
+            <ul>
+                <li>Play/Pause button</li>
+                <li>Volume control</li>
+                <li>Progress/Seek bar</li>
+                <li>Fullscreen toggle</li>
+                <li>Caption toggle (CC button)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- WebVTT Caption File Example -->
+    <div class="media-container">
+        <h2>📝 Caption File Format (WebVTT)</h2>
+        <p>
+            For the video captions to work, you need a WebVTT (.vtt) file.
+            Here's an example of what the caption file should look like:
+        </p>
+        <pre style="background-color: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto;">
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+(Gentle acoustic guitar begins to play)
+
+00:00:04.000 --> 00:00:08.000
+♪ In a forest green and wide ♪
+♪ A bunny wakes with morning pride ♪
+
+00:00:08.000 --> 00:00:12.000
+(Birds chirping softly in the background)
+(The sun rises over the trees)
+        </pre>
+    </div>
+
+</body>
+
+</html>
