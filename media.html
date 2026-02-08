@@ -154,7 +154,14 @@
                 
                 Note: The captions file should be in WebVTT format (.vtt)
             -->
-            <track kind="captions" src="captions/music-captions.vtt?v=2" srclang="en" label="English" default>
+            <!-- 
+                FIXED FOR LOCAL PLAYBACK:
+                Using a Data URI for the src allows captions to load even when opening 
+                the file directly from the hard drive (bypassing browser CORS restrictions).
+            -->
+            <track kind="captions"
+                src="data:text/vtt;charset=utf-8,WEBVTT%0A%0A00%3A00%3A00.000%20--%3E%2000%3A00%3A04.000%0A(Gentle%20acoustic%20guitar%20begins%20to%20play)%0A%0A00%3A00%3A04.000%20--%3E%2000%3A00%3A08.000%0A%E2%99%AA%20In%20a%20forest%20green%20and%20wide%20%E2%99%AA%0A%E2%99%AA%20A%20bunny%20wakes%20with%20morning%20pride%20%E2%99%AA%0A%0A00%3A00%3A08.000%20--%3E%2000%3A00%3A12.000%0A(Birds%20chirping%20softly%20in%20the%20background)%0A(The%20sun%20rises%20over%20the%20trees)%0A%0A00%3A00%3A12.000%20--%3E%2000%3A00%3A16.000%0A%E2%99%AA%20Stretching%20out%20to%20greet%20the%20day%20%E2%99%AA%0A%E2%99%AA%20While%20butterflies%20come%20out%20to%20play%20%E2%99%AA%0A%0A00%3A00%3A16.000%20--%3E%2000%3A00%3A20.000%0A(Music%20swells%20with%20a%20happy%20tempo)"
+                srclang="en" label="English" default>
 
             <!-- Fallback message for browsers that don't support video element -->
             Your browser does not support the video element. Please upgrade to a modern browser.
