@@ -1,8 +1,5 @@
 # HTML Elements — Group Assignment
 
-## Group Name
-HTML Elements Explorers
-
 ## Project Title
 Guided Activity: HTML Elements (Block, Inline, Media, Graphics & iFrames)
 
