@@ -18,6 +18,7 @@ Guided Activity: HTML Elements (Block, Inline, Media, Graphics & iFrames)
 
 2. **Karabo (GitHub: Karabo-jpg)**  
    - Role: Structure Lead & Media Lead  
+   - Email: k.ojiambo@alustudent.com  
    - Responsibilities:
      - Created `block-inline.html`
      - Demonstrated block vs inline elements with comments and styling
