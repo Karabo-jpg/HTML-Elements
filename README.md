@@ -1,57 +1,84 @@
-# HTML Elements Group Assignment - Music Theme
+# HTML Elements — Group Assignment
 
-This repository contains the implementation for **Part 1 (Structure Lead)** and **Part 2 (Media Lead)** of the HTML Elements Group Activity. The project follows a cohesive **Music Theme**, demonstrating various HTML5 capabilities.
+## Group Name
+HTML Elements Explorers
 
-## 🎵 Project Overview
-*   **Theme:** Music (Orchestras, Genres, Composition)
-*   **Author:** Karabo-jpg (k.ojiambo@alustudent.com)
+## Project Title
+Guided Activity: HTML Elements (Block, Inline, Media, Graphics & iFrames)
 
-## 📂 Implementation Details
+## Group Members & Roles
 
-### Part 1: Structure Lead (`block-inline.html`)
-Demonstrates the difference between block and inline elements using visual borders and music-related content.
-*   **Block Elements:**
-    *   `<div>`: Represents the "Symphony Orchestra" (full width, purple border).
-    *   `<section>`: Represents "Music Genres" (full width, orange border).
-    *   Both elements demonstrate how block-level items take up the full available width and start on new lines.
-*   **Inline Elements:**
-    *   `<strong>`: Used for emphasizing key terms like "music composition".
-    *   `<span>`: Used for highlighting text with a yellow background.
-    *   Demonstrates how inline elements flow within the text content without breaking lines.
+1. **Jesse Kisaale Walusansa**  
+   - Role: Graphics Lead & Integration Lead  
+   - Email: j.walusansa@alustudent.com  
+   - Responsibilities:
+     - Created `graphics.html`
+     - Implemented `<img>`, inline `<svg>`, and `<canvas>` elements
+     - Wrote JavaScript to draw a rectangle on the canvas
+     - Created `iframe.html` and `child.html`
+     - Embedded pages using `<iframe>`
+     - Ensured navigation links across all pages
 
-### Part 2: Media Lead (`media.html`)
-Showcases HTML5 multimedia elements with local files and accessibility features.
-*   **Audio Player:**
-    *   Plays specific track: **Elevation Worship So Be IT**.
-    *   Uses `<audio controls>` for native browser playback (seek/volume/pause).
-    *   Source: `audio/elevation-worship.mp3`
-*   **Video Player:**
-    *   Plays short film: **Forest Bunny** (Big Buck Bunny).
-    *   Uses `<video controls width="320">`.
-    *   Source: `video/forest-bunny.mp4` (Stored locally).
-*   **Accessibility (Captions):**
-    *   Includes a `<track>` element for WebVTT captions.
-    *   File: `captions/music-captions.vtt`.
-    *   Features custom "lyrics" and descriptive audio cues ("♪ A bunny wakes with morning pride ♪") synced to the video.
+2. **Karabo (GitHub: Karabo-jpg)**  
+   - Role: Structure Lead & Media Lead  
+   - Responsibilities:
+     - Created `block-inline.html`
+     - Demonstrated block vs inline elements with comments and styling
+     - Created `media.html`
+     - Embedded audio and video elements with controls and captions
+     - Ensured content matched the project theme
 
-## 🚀 How to Run
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/Karabo-jpg/HTML-Elements.git
-    ```
-2.  Open the folder in **VS Code**.
-3.  Right-click `block-inline.html` or `media.html` and select **"Open with Live Server"** (or just open the file in your browser).
-    *   *Note: For captions to load correctly in some browsers (like Chrome), running through a local server is recommended due to security restrictions on local files.*
+---
 
-## 📁 File Structure
-```
-/
-├── block-inline.html       # Part 1: Structure Demo
-├── media.html              # Part 2: Media Player
-├── audio/
-│   └── elevation-worship.mp3
-├── video/
-│   └── forest-bunny.mp4
-└── captions/
-    └── music-captions.vtt
-```
+## Chosen Theme
+**Music**
+
+All pages in this project are based on the theme of music. The examples, images, videos, text, and graphics are all related to music concepts, instruments, and learning.
+
+---
+
+## Project Description
+This project demonstrates core HTML concepts through a multi-page website. The main objectives include:
+
+- Understanding and applying block and inline HTML elements
+- Embedding audio and video using HTML media elements
+- Displaying graphics using images, SVG, and canvas
+- Embedding webpages using iframes
+- Practicing teamwork using GitHub collaboration
+
+---
+
+## Files & Responsibilities
+
+| File Name           | Description |
+|---------------------|-------------|
+| `block-inline.html` | Demonstrates block vs inline elements using `<div>`, `<section>`, `<span>`, and `<strong>`. |
+| `media.html`        | Contains audio and video players related to the music theme, including captions. |
+| `graphics.html`     | Displays an image, inline SVG, and canvas drawing using JavaScript. |
+| `iframe.html`       | Embeds `child.html` using an iframe and provides navigation across pages. |
+| `child.html`        | A simple embedded page demonstrating music learning content. |
+
+---
+
+## Navigation
+Each page includes navigation links to ensure seamless movement across the entire website:
+
+- Structure Page
+- Media Page
+- Graphics Page
+- iFrame Page
+
+---
+
+## One Challenge Faced
+One of the challenges we faced was ensuring correct file linking and iframe embedding without path errors. We solved this by maintaining a clean root directory structure and testing all navigation links locally before submission.
+
+---
+
+## One Thing We Learned as a Group
+We learned how to collaborate efficiently using GitHub by working on separate files, committing individual contributions, and merging them into a single functional project. This helped us understand real-world frontend teamwork workflows.
+
+---
+
+## GitHub Repository
+https://github.com/Karabo-jpg/HTML-Elements.git
