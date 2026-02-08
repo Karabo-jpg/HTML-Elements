@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Graphics</title>
+</head>
+<body>
+
+    <h1>Music Graphics Showcase</h1>
+    <p>This page demonstrates different graphic elements used in HTML, all based on a music theme.</p>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="block-inline.html">Structure Page</a> |
+        <a href="media.html">Media Page</a> |
+        <a href="iframe.html">iFrame Page</a>
+    </nav>
+
+    <hr>
+
+    <!-- Image Element -->
+    <!-- The img element displays static graphic content -->
+    <h2>Music Image</h2>
+    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+         alt="Music Studio"
+         width="300">
+
+    <p>This image represents a music studio setup.</p>
+
+    <hr>
+
+    <!-- Inline SVG Graphic -->
+    <!-- SVG is vector-based and remains sharp when scaled -->
+    <h2>SVG Graphic - Music Note</h2>
+
+    <svg width="120" height="120">
+        <circle cx="60" cy="60" r="50" stroke="black" stroke-width="3" fill="lightblue" />
+        <text x="35" y="70" font-size="40">♪</text>
+    </svg>
+
+    <p>This SVG displays a simple music note inside a circle.</p>
+
+    <hr>
+
+    <!-- Canvas Element -->
+    <!-- Canvas allows dynamic drawing using JavaScript -->
+    <h2>Canvas Drawing</h2>
+    <canvas id="musicCanvas" width="300" height="150" style="border:1px solid black;"></canvas>
+
+    <p>The rectangle below is drawn using JavaScript.</p>
+
+    <!-- JavaScript to draw a rectangle -->
+    <script>
+        const canvas = document.getElementById("musicCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw a rectangle representing a music bar
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(50, 40, 200, 70);
+    </script>
+
+</body>
+</html>
