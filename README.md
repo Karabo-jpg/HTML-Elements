@@ -71,6 +71,8 @@ Each page includes navigation links to ensure seamless movement across the entir
 ## One Challenge Faced
 One of the challenges we faced was ensuring correct file linking and iframe embedding without path errors. We solved this by maintaining a clean root directory structure and testing all navigation links locally before submission.
 
+A major challenge we faced was that local video captions were blocked by browser security policies (CORS) when opening the file directly. To resolve this without needing a web server, we converted the WebVTT caption file into a Data URI and embedded it directly in the HTML code. This ensures the captions are always visible regardless of how the file is accessed.
+
 ---
 
 ## One Thing We Learned as a Group
